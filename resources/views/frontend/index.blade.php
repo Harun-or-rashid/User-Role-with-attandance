@@ -1,2 +1,4 @@
 @extends('frontend.master')
-{{--@include('frontend.sidebar')--}}
+@section('main_section_row')
+
+    @endsection
