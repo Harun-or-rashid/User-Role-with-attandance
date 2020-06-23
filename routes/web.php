@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('test',function (){
     return view('employee.create');
 });
-
+Route::post('store','EmployeeController@store');
 
 Route::get('/','LoginController@showLogin');
 Route::post('login','LoginController@login')->name('login');

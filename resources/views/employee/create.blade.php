@@ -1,9 +1,22 @@
 @extends('backend.master')
 @section('main_section_row')
 
-    <div class="container>
-        <form class="form-box" action="/create.user" method="post" enctype="multipart/form-data">
+    <div class="container">
+        <form class=" form-box" action="{{url('store')}}" method="post" enctype="multipart/form-data">
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <h3 class="form-box success">Add  Employee</h3><br>
+
+    <div class="col-md-7">
+        @include('backend.partial.session_message')
+    </div>
             @csrf
             <div class="form-group col-md-5">
                 <label for="exampleFormControlInput1">Name</label>
@@ -23,6 +36,11 @@
                 {{$errors->first('phone')}}
             </div>
             <div class="form-group col-md-5">
+                <label for="exampleFormControlInput1">Designation</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="designation" placeholder="Software Engineer">
+                {{$errors->first('designation')}}
+            </div>
+            <div class="form-group col-md-5">
                 <label for="exampleFormControlInput1">Address</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" name="address" placeholder="Shyamoli/Dhaka">
                 {{$errors->first('address')}}
@@ -36,10 +54,9 @@
             <div class="form-group col-md-5">
                 <label for="exampleFormControlSelect1">Role</label>
                 <select name="role" class="form-control" id="exampleFormControlSelect1">
-                    <option value="" disabled>Select Customer Status</option>
-                    <option value="2">Authority</option>
-                    <option value="3">General Admin</option>
-                    <option value="4">Member</option>
+                    <option value="" disabled>Select Employee Role</option>
+                    <option value="2">HR</option>
+                    <option value="3">Employee</option>
                 </select>
                 {{$errors->first('role')}}
             </div>
