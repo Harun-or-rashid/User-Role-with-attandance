@@ -12,8 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('test',function (){
+    return view('employee.create');
+});
 
 
 Route::get('/','LoginController@showLogin');
-Route::post('/','LoginController@login');
+Route::post('login','LoginController@login')->name('login');
+Route::get('out','LoginController@logOut')->name('logout');
