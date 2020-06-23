@@ -31,11 +31,11 @@
 <div class="wrapper">
 
     <!-- Navbar -->
-   @include('frontend.partial.header')
+   @include('backend.partial.header')
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-@include('frontend.partial.sidebar')
+@include('backend.partial.sidebar')
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -72,7 +72,7 @@
 
 
     <!-- /.content-wrapper -->
-  @include('frontend.partial.footer')
+  @include('backend.partial.footer')
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">

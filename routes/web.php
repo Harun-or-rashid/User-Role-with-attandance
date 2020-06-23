@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.login');
-});
+
+
+Route::get('/','LoginController@showLogin');
+Route::post('/','LoginController@login');
