@@ -2,7 +2,7 @@
 @section('main_section_row')
 
     <div class="container">
-        <form class=" form-box" action="{{url('store')}}" method="post" enctype="multipart/form-data">
+        <form class=" form-box" action="{{url('employees/store')}}" method="post" enctype="multipart/form-data">
             @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>

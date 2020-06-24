@@ -14,7 +14,8 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        //
+        $employees=Employee::get();
+        return view('employee.list')->with('employees',$employees);
     }
 
     /**
@@ -24,7 +25,7 @@ class EmployeeController extends Controller
      */
     public function create()
     {
-        //
+        return view('employee.create');
     }
 
     /**
@@ -83,7 +84,8 @@ class EmployeeController extends Controller
      */
     public function show($id)
     {
-        //
+        $employee=Employee::find($id);
+        return view('employee.show')->with('employee',$employee);
     }
 
     /**
@@ -94,8 +96,8 @@ class EmployeeController extends Controller
      */
     public function edit($id)
     {
-        $data=Employee::Where('id',$id)->first();
-        return view('employee.edit',compact('data'));
+        $employee=Employee::Where('id',$id)->first();
+        return view('employee.edit',compact('employee'));
     }
 
     /**
@@ -110,6 +112,10 @@ class EmployeeController extends Controller
         try {
             $edit_category=$this->validate($request,[
                 'name'=>'required',
+                'phone'=>'required',
+                'email'=>'required',
+                'password'=>'required',
+                'address'=>'required',
             ]);
 
             $employee=Employee::where('id',$id)->first();
@@ -142,6 +148,16 @@ class EmployeeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try {
+            Employee::where('id',$id)->delete();
+            session()->flash('type','success');
+            session()->flash('message','Employee Successfully Deleted');
+            return redirect()->back();
+        }catch (\Exception $e){
+            session()->flash('type','Danger');
+            session()->flash('message','Something Wrong');
+            return redirect()->back();
+        }
     }
+
 }

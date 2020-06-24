@@ -30,14 +30,18 @@ class LoginController extends Controller
             }
         }catch (\Exception $e){
             session()->flash('type', 'danger');
-            session()->flash('message', 'Something Went Wrong. '.$e->getMessage());
-            return redirect()->back();
+            session()->flash('message', 'Invalid Email or Password. '.$e->getMessage());
+            return redirect()->route('signin');
         }
+        session()->flash('type', 'danger');
+        session()->flash('message', 'Invalid Email or Password.');
+        return redirect()->route('signin');
+
     }
 
     public function logOut()
     {
         Auth::logout();
-        return redirect()->back();
+        return redirect()->route('signin');
     }
 }

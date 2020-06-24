@@ -29,6 +29,8 @@
             <p class="login-box-msg">Sign in to start your session</p>
 
             <form action="{{route('login')}}" method="post">
+                @include('backend.partial.session_message')
+
                 @csrf
                 <div class="input-group mb-3">
                     <input type="email" name="email" class="form-control" placeholder="Email">

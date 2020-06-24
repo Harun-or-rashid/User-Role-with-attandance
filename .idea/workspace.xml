@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e267f974-f4f1-4da3-9c96-e2321932a5c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/partial/session_message.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/partial/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/partial/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/employee/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employee/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employee/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employee/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +139,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend/partial" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -163,7 +168,8 @@
       <option name="presentableId" value="Default" />
       <updated>1592849763493</updated>
       <workItem from="1592849766673" duration="5266000" />
-      <workItem from="1592922676883" duration="12534000" />
+      <workItem from="1592922676883" duration="17603000" />
+      <workItem from="1592984245292" duration="3825000" />
     </task>
     <task id="LOCAL-00001" summary="login blade added">
       <created>1592923918836</created>
@@ -183,10 +189,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="login blade added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592945764660">
+    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592985456239">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592945764660" />
+    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592985456239" />
     <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592923916760">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
