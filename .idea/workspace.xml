@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e267f974-f4f1-4da3-9c96-e2321932a5c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +163,9 @@
       <workItem from="1592922676883" duration="17603000" />
       <workItem from="1592984245292" duration="3825000" />
       <workItem from="1593193640505" duration="885000" />
-      <workItem from="1593713252869" duration="2323000" />
+      <workItem from="1593713252869" duration="2622000" />
+      <workItem from="1593769062350" duration="743000" />
+      <workItem from="1594144242693" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="login blade added">
       <created>1592923918836</created>
@@ -194,10 +197,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592849772807" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1593194434110">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1593769092495">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1593194434110" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1593769092495" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1592924540873">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
