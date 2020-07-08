@@ -12,7 +12,7 @@ class User extends Authenticatable
 
     public function roles()
     {
-        $this->hasMany(Role::class);
+        $this->hasMany(Role::class,'role_id','id');
     }
 
     /**
