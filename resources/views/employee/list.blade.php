@@ -56,6 +56,7 @@
                                 <i class="ace-icon fa fa-trash bigger-130 ">Delete</i>
                             </a>
 
+
                         </div>
                     </td>
                 </tr>

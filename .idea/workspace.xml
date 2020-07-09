@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e267f974-f4f1-4da3-9c96-e2321932a5c8" name="Default Changelist" comment="">
+    <list default="true" id="e267f974-f4f1-4da3-9c96-e2321932a5c8" name="Default Changelist" comment="check admin middleware added">
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckAdmin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employee/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +135,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CarRent" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -171,7 +172,8 @@
       <workItem from="1594144242693" duration="4761000" />
       <workItem from="1594203828061" duration="3168000" />
       <workItem from="1594210350717" duration="2106000" />
-      <workItem from="1594234648791" duration="1912000" />
+      <workItem from="1594234648791" duration="2144000" />
+      <workItem from="1594317775866" duration="2472000" />
     </task>
     <task id="LOCAL-00001" summary="login blade added">
       <created>1592923918836</created>
@@ -180,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592923918837</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="middleware route added">
+      <created>1594238311733</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594238311734</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,25 +197,27 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="login blade added" />
-    <option name="LAST_COMMIT_MESSAGE" value="login blade added" />
+    <MESSAGE value="middleware route added" />
+    <MESSAGE value="check admin middleware added" />
+    <option name="LAST_COMMIT_MESSAGE" value="check admin middleware added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592985456239">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592985456239" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1594153295268">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1594238510720">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594153295268" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594238510720" />
     <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1594205645848">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594205645848" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1594153302001">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1594238474637">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594153302001" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594238474637" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1594234948101">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
