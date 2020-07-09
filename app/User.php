@@ -12,7 +12,7 @@ class User extends Authenticatable
 protected $guarded=[];
     public function roles()
     {
-        $this->hasMany(Role::class,'role_id','id');
+        $this->belongsTo(Role::class);
     }
 
     /**

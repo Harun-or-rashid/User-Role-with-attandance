@@ -25,18 +25,19 @@ Route::get('out','LoginController@logOut')->name('logout');
 Route::group(['middleware'=>['auth']],function (){
     Route::group(['middleware'=>['admin']],function (){
         Route::prefix('employees')->name('employee.')->group(function (){
+
             Route::get('/','EmployeeController@index')->name('index');
             Route::get('/show/{id}','EmployeeController@show')->name('show');
-            Route::get('/create','EmployeeController@create')->name('create');
+            Route::get('/create','EmployeeController@create')->name('create')->middleware('admin');
             Route::post('/store','EmployeeController@store')->name('store');
             Route::get('/edit/{id}','EmployeeController@edit')->name('edit');
             Route::post('/update/{id}','EmployeeController@update')->name('update');
             Route::get('/delete/{id}','EmployeeController@destroy')->name('delete');
+            });
 
 
         });
 
-    });
 });
 
 
