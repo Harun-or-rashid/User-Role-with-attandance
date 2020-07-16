@@ -15,10 +15,10 @@ protected $guarded=[];
         return $this->hasMany(RoleUser::class);
     }
 
-    public function hasRole($role)
+    public function hasRole()
     {
-        $check=$this->roles()->where('role_id',$role)->count();
-        if (!$check==1){
+        $check=$this->roles()->pluck('role_id');
+        if ($check->contains('1')){
             return true;
         }
         return false;
