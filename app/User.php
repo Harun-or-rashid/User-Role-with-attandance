@@ -15,6 +15,14 @@ protected $guarded=[];
         return $this->hasMany(RoleUser::class);
     }
 
+    public function hasRole($role)
+    {
+        $check=$this->roles()->where('role_id',$role)->count();
+        if (!$check==1){
+            return true;
+        }
+        return false;
+    }
     /**
      * The attributes that are mass assignable.
      *
