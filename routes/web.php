@@ -23,7 +23,6 @@ Route::get('signin/','LoginController@showLogin')->name('signin');
 Route::post('login','LoginController@login')->name('login');
 Route::get('out','LoginController@logOut')->name('logout');
 Route::group(['middleware'=>['auth']],function (){
-    Route::group(['middleware'=>['admin']],function (){
         Route::prefix('employees')->name('employee.')->group(function (){
 
             Route::get('/','EmployeeController@index')->name('index');
@@ -36,7 +35,6 @@ Route::group(['middleware'=>['auth']],function (){
             });
 
 
-        });
 
 });
 

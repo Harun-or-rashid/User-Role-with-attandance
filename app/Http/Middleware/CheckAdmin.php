@@ -17,10 +17,11 @@ class CheckAdmin
      */
     public function handle($request, Closure $next)
     {
-        $role=Auth::user()->roles->pluck('name');
+        $role=Auth::user()->roles->pluck('role_id');
+
 //        need to check
-        dd($role);
-        if(!$role->contains('admin')){
+//        dd($role);
+        if(!$role->contains('1')){
             return redirect('signin');
         }
         return $next($request);
