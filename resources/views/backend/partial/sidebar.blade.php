@@ -45,6 +45,9 @@
                                 <p>Add New</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                        </li>
+
 {{--                        <li class="nav-item">--}}
 {{--                            <a href="pages/charts/inline.html" class="nav-link">--}}
 {{--                                <i class="far fa-circle nav-icon"></i>--}}

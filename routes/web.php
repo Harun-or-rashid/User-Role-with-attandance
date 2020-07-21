@@ -24,7 +24,6 @@ Route::post('login','LoginController@login')->name('login');
 Route::get('out','LoginController@logOut')->name('logout');
 Route::group(['middleware'=>['auth']],function (){
         Route::prefix('employees')->name('employee.')->group(function (){
-
             Route::get('/','EmployeeController@index')->name('index');
             Route::get('/show/{id}','EmployeeController@show')->name('show');
             Route::get('/create','EmployeeController@create')->name('create')->middleware('admin');
@@ -33,6 +32,7 @@ Route::group(['middleware'=>['auth']],function (){
             Route::post('/update/{id}','EmployeeController@update')->name('update');
             Route::get('/delete/{id}','EmployeeController@destroy')->name('delete');
             });
+//        Route::get('contact','');
 
 
 
