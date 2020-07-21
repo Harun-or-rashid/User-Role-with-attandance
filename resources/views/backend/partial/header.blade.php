@@ -8,7 +8,7 @@
             <a href="index3.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="" class="nav-link" data-toggle="modal" data-target="#modalContactForm">Contact</a>
+            <a href="{{route('contact-us')}}" class="nav-link"  >Contact</a>
         </li>
     </ul>
 
