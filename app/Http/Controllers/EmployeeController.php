@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Employee;
+use App\Mail\ContactMail;
 use Illuminate\Http\Request;
+//use  App\Mail\ContactMail;
+use Illuminate\Support\Facades\Mail;
 
 class EmployeeController extends Controller
 {
@@ -65,7 +68,7 @@ class EmployeeController extends Controller
 
 //            dd($employee);
             Employee::create($employee);
-
+            Mail::to('ringku.swe@gmail.com')->send(new ContactMail());
             session()->flash('type', 'success');
             session()->flash('message', 'Successfully Employee Added...!');
             return redirect()->back();
