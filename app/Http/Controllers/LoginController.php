@@ -11,6 +11,7 @@ class LoginController extends Controller
     {
         return view('backend.login');
     }
+
     public function login(Request $request)
     {
         $this->validate($request,[
