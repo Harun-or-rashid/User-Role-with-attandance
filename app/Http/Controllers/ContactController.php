@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Contact;
+use http\Message;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -36,20 +37,31 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         $contactValidation=$this->validate($request,[
-           'name'=>'required',
+            'name'=>'required',
             'email'=>'required',
             'subject'=>'required',
             'message'=>'required'
         ]);
-        $contactInfo=([
-           'name'=>$request->name,
-           'email'=>$request->email,
-           'subject'=>$request->subject,
-           'message'=>$request->message,
-        ]);
-//        dd($contactInfo);
+        try {
+            if ($contactValidation){
+                $contactInfo=([
+                    'name'=>$request->name,
+                    'email'=>$request->email,
+                    'subject'=>$request->subject,
+                    'message'=>$request->message,
+                ]);
+                Contact::create($contactInfo);
+                return redirect()->back();
+                session()->flash('type','success');
+                session()->flash('message',"We have taken your valuable response 'Thank you'");
+            }
 
-        Contact::create($contactInfo);
+        }catch (\Exception $e){
+            session()->flash('type','danger');
+            session()->flash('message','Oh No,,Something missing');
+            return redirect()->back();
+        }
+
     }
 
     /**

@@ -39,18 +39,19 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
-        try {
-           $this->validate($request,[
-                'name'=>'required',
-                'phone'=>'required',
-                'email'=>'required',
-                'password'=>'required',
-                'address'=>'required',
-                'designation'=>'required',
-                'image'=>'required|file|image',
-                'role'=>'required'
+        $this->validate($request,[
+            'name'=>'required',
+            'phone'=>'required',
+            'email'=>'required',
+            'password'=>'required',
+            'address'=>'required',
+            'designation'=>'required',
+            'image'=>'required|file|image',
+            'role'=>'required'
 
-            ]);
+        ]);
+        try {
+
 
             $employee=[
                 'name'=>$request->name,
