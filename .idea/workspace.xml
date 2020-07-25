@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e267f974-f4f1-4da3-9c96-e2321932a5c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/partial/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/partial/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +193,7 @@
       <workItem from="1595501834164" duration="831000" />
       <workItem from="1595524394858" duration="715000" />
       <workItem from="1595610220997" duration="3506000" />
-      <workItem from="1595667714929" duration="4268000" />
+      <workItem from="1595667714929" duration="5753000" />
     </task>
     <task id="LOCAL-00001" summary="login blade added">
       <created>1592923918836</created>
