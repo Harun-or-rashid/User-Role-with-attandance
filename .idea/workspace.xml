@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e267f974-f4f1-4da3-9c96-e2321932a5c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/partial/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/partial/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +194,8 @@
       <workItem from="1595472061670" duration="13543000" />
       <workItem from="1595501834164" duration="831000" />
       <workItem from="1595524394858" duration="715000" />
-      <workItem from="1595610220997" duration="3176000" />
+      <workItem from="1595610220997" duration="3506000" />
+      <workItem from="1595667714929" duration="4268000" />
     </task>
     <task id="LOCAL-00001" summary="login blade added">
       <created>1592923918836</created>
@@ -298,10 +302,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595617182385" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1595613251459">
+    <state x="77" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1595667820002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1595613251459" />
+    <state x="77" y="255" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1595667820002" />
     <state x="568" y="95" key="ftp.server.browser" timestamp="1595473387028">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

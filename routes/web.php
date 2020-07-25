@@ -43,6 +43,10 @@ Route::group(['middleware'=>['auth']],function (){
 
 
 });
+Route::prefix('contacts')->name('contact.')->group(function (){
+    Route::get('/','ContactController@index');
+    Route::post('/store','ContactController@store')->name('create-contact');
+});
 
 
 

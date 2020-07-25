@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Contact;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -23,7 +24,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        //
+        return  view('backend.emails.contact');
     }
 
     /**
@@ -34,7 +35,21 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $contactValidation=$this->validate($request,[
+           'name'=>'required',
+            'email'=>'required',
+            'subject'=>'required',
+            'message'=>'required'
+        ]);
+        $contactInfo=([
+           'name'=>$request->name,
+           'email'=>$request->email,
+           'subject'=>$request->subject,
+           'message'=>$request->message,
+        ]);
+//        dd($contactInfo);
+
+        Contact::create($contactInfo);
     }
 
     /**
