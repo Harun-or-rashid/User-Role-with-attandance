@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Contact;
+use App\Mail\ContactMail;
 use http\Message;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -51,6 +53,7 @@ class ContactController extends Controller
                     'message'=>$request->message,
                 ]);
                 Contact::create($contactInfo);
+                Mail::to($request->email)->send(new ContactMail());
                 return redirect()->back();
                 session()->flash('type','success');
                 session()->flash('message',"We have taken your valuable response 'Thank you'");
