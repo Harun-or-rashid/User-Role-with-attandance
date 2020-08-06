@@ -38,7 +38,7 @@ Route::group(['middleware'=>['auth']],function (){
             Route::post('/update/{id}','EmployeeController@update')->name('update');
             Route::get('/delete/{id}','EmployeeController@destroy')->name('delete');
             });
-
+            Route::get('/role','RoleController@index');
 
 
 

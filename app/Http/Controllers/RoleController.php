@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Contact;
-use App\Mail\ContactMail;
-use http\Message;
+use App\Role;
+use App\RoleUser;
+use App\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 
-class ContactController extends Controller
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +16,11 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return view('backend.partial.contact');
+        $roles=RoleUser::all();
+        $user=User::all();
+        $role=Role::all();
+
+       return view('backend.role.role',compact('roles',$roles,'user',$user,'role',$role));
     }
 
     /**
@@ -27,7 +30,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        return  view('backend.emails.contact');
+        //
     }
 
     /**
@@ -38,33 +41,7 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        $contactValidation=$this->validate($request,[
-            'name'=>'required',
-            'email'=>'required',
-            'subject'=>'required',
-            'message'=>'required'
-        ]);
-        try {
-            if ($contactValidation){
-                $contactInfo=([
-                    'name'=>$request->name,
-                    'email'=>$request->email,
-                    'subject'=>$request->subject,
-                    'message'=>$request->message,
-                ]);
-                Contact::create($contactInfo);
-                Mail::to($request->email)->send(new ContactMail());
-                return  redirect()->back();
-                session()->flash('type','success');
-                session()->flash('message',"We have taken your valuable response 'Thank you'");
-            }
-
-        }catch (\Exception $e){
-            session()->flash('type','danger');
-            session()->flash('message','Oh No,,Something missing');
-            return redirect()->back();
-        }
-
+        //
     }
 
     /**
@@ -86,7 +63,11 @@ class ContactController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user=User::find($id);
+        $roles=RoleUser::all();
+        $role=Role::all();
+
+        return view('backend.role.role',compact('roles',$roles,'user',$user,'role',$role));
     }
 
     /**
