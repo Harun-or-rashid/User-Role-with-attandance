@@ -8,11 +8,13 @@ class Role extends Model
 {
     protected $guarded=[];
 
-    public function users()
-    {
-        $this->hasMany(User::class);
+    protected $table = "roles";
 
-}
+//    public function users()
+//    {
+//        $this->hasMany(User::class);
+//
+//}
 
     public function roleUsers()
     {

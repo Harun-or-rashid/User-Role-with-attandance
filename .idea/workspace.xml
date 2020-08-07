@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e267f974-f4f1-4da3-9c96-e2321932a5c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/role/role.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/partial/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/partial/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RoleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/RoleUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RoleUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/role/role.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/role/role.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,6 +202,9 @@
       <workItem from="1595667714929" duration="12478000" />
       <workItem from="1596050929479" duration="1241000" />
       <workItem from="1596610445890" duration="4920000" />
+      <workItem from="1596732541724" duration="2922000" />
+      <workItem from="1596787143487" duration="4684000" />
+      <workItem from="1596818024521" duration="1733000" />
     </task>
     <task id="LOCAL-00001" summary="login blade added">
       <created>1592923918836</created>
@@ -257,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595353577544</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="role blde and functionality added">
+      <created>1596733062194</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596733062194</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +283,8 @@
     <MESSAGE value="admin checked by middleware" />
     <MESSAGE value="authentication checked in sidebar blade" />
     <MESSAGE value="issue fixing" />
-    <option name="LAST_COMMIT_MESSAGE" value="issue fixing" />
+    <MESSAGE value="role blde and functionality added" />
+    <option name="LAST_COMMIT_MESSAGE" value="role blde and functionality added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Deployment" timestamp="1595492813232">
@@ -294,26 +307,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592985456239" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1595353575750">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1596733059423">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1595353575750" />
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1595473455798">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596733059423" />
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1596807342118">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595473455798" />
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596807342118" />
     <state x="184" y="7" key="SettingsEditor" timestamp="1595500702483">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595500702483" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1595617182385">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1596733072718">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595617182385" />
-    <state x="77" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1596732611759">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596733072718" />
+    <state x="77" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1596818558788">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="77" y="255" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596732611759" />
+    <state x="77" y="255" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596818558788" />
     <state x="568" y="95" key="ftp.server.browser" timestamp="1595473387028">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -330,11 +343,6 @@
           <url>file://$PROJECT_DIR$/resources/views/backend/partial/sidebar.blade.php</url>
           <line>59</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Role.php</url>
-          <line>8</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

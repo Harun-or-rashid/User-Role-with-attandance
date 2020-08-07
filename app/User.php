@@ -10,6 +10,7 @@ class User extends Authenticatable
 {
     use Notifiable;
 protected $guarded=[];
+
     public function roles()
     {
         return $this->hasMany(RoleUser::class);

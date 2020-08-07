@@ -5,16 +5,22 @@
             <th>User name</th>
             <th>Role</th>
         </tr>
-{{--        @foreach(roles as $roles)--}}
         <tr>
+
+
             <td>
+
                 <select name="Role" id="">
-                    <option value="">{{$user->role->name}}</option>
+                    @foreach($rolea as $role)
+                    <option value="">{{$role->name}}</option>
+                    @endforeach
                 </select>
+
+
             </td>
             <td>
                 <select name="Role" id="">
-                    <option value="">{{$roles->user_id}}</option>
+                    <option value="">{{$user->name}}</option>
                 </select>
             </td>
         </tr>

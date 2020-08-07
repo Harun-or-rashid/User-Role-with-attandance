@@ -63,11 +63,13 @@ class RoleController extends Controller
      */
     public function edit($id)
     {
+
+//        dd("d");
         $user=User::find($id);
         $roles=RoleUser::all();
-        $role=Role::all();
-
-        return view('backend.role.role',compact('roles',$roles,'user',$user,'role',$role));
+        $rolea=Role::all();
+//dd($role);
+        return view('backend.role.role',compact('roles',$roles,'user',$user,'rolea',$rolea));
     }
 
     /**

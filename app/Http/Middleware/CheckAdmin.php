@@ -17,11 +17,14 @@ class CheckAdmin
      */
     public function handle($request, Closure $next)
     {
-        $role=Auth::user()->roles->pluck('role_id');
+        $roles = array();
+        foreach (Auth::user()->roles as $roleuser) {
+            $roles[] = $roleuser->role->name;
+        }
 
 //        need to check
 //        dd($role);
-        if(!$role->contains('1')){
+        if(!in_array('admin', $roles)){
             return redirect('signin');
         }
         return $next($request);

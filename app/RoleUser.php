@@ -8,13 +8,15 @@ class RoleUser extends Model
 {
     protected $guarded=[];
 
+    protected $table = "role_users";
+
     public function user()
     {
-        $this->belongsTo(User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function role()
     {
-        $this->belongsTo(Role::class);
+        return $this->belongsTo(Role::class);
     }
 }
