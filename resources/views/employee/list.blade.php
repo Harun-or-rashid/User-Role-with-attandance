@@ -5,7 +5,7 @@
 
         @include('backend.partial.session_message')
 
-        <table id="user-list-table" class="table table-striped table-bordered table-hover">
+        <table id=" table_id " class="table table-striped display table-bordered table-hover">
             <thead>
             <tr>
                 <th>SL</th>
@@ -71,3 +71,53 @@
 
 
     @endsection
+<script !src="">
+    $(document).ready( function () {
+        var dataTable = $('#table_id').DataTable(
+            {
+                "paging": true, // Allow data to be paged
+                "lengthChange": false,
+                "searching": true, // Search box and search function will be actived
+                "ordering": true,
+                "info": true,
+                "autoWidth": true,
+                "processing": true,  // Show processing
+                "serverSide": true,  // Server side processing
+                "deferLoading": 0, // In this case we want the table load on request so initial automatical load is not desired
+                "pageLength": 5,    // 5 rows per page
+                "ajax":{
+                    url :  '',
+                    type : "POST",
+                    dataType: 'json',
+                    error: function(data){
+                        console.log(data);
+                    }
+                },
+                // aoColumnDefs allow us to specify which column we want to make
+                // sortable or column's alignment
+                "aoColumnDefs": [
+                    { 'bSortable': false, 'aTargets': [0,1] }    ,
+                    { className: "dt-center", "aTargets": [0,1,2,3] },
+                ],
+                "columns": [
+                    null,
+                    null,
+                    null,
+                    { "visible": false }, //The last column will be invisible
+                ],
+
+            });
+        {{--$('#button').on('click',  function () {--}}
+        {{--    var resourceURL = "{{route('user.datatables',['group_id'=>':group_id'])}}";--}}
+        {{--    var group_id = 1;--}}
+        {{--    group_id = $('#group_id').val(); //Get the value of input text--}}
+        {{--    resourceURL = resourceURL.replace(":group_id", group_id); // Build the route--}}
+
+        {{--    /*--}}
+        {{--    * Change the URL of dataTable and call ajax to load new data--}}
+        {{--    */--}}
+        {{--    dataTable.ajax.url(targetUrl).load();--}}
+        {{--    dataTable.draw();--}}
+        {{--} );--}}
+    } );
+</script>
