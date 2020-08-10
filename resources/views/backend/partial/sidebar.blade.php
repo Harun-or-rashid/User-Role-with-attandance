@@ -28,7 +28,7 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-person-booth"></i>
                         <p>
-                            Employee
+                            Employeessss
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
