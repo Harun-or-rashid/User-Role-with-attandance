@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Mail;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('email',function (){
     Mail::to('email@email.com')->send(new ContactMail());
    return new ContactMail();

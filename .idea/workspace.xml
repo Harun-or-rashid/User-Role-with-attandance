@@ -136,7 +136,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo.thelawapp.com.au" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
   </component>
@@ -200,7 +200,7 @@
       <workItem from="1596818024521" duration="3229000" />
       <workItem from="1596993417968" duration="683000" />
       <workItem from="1597029750493" duration="308000" />
-      <workItem from="1597032666249" duration="3890000" />
+      <workItem from="1597032666249" duration="6315000" />
     </task>
     <task id="LOCAL-00001" summary="login blade added">
       <created>1592923918836</created>
@@ -279,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596993499418</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="changed employee">
+      <created>1597048602186</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1597048602186</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +302,8 @@
     <MESSAGE value="role blde and functionality added" />
     <MESSAGE value="fixing issue" />
     <MESSAGE value="datatable added" />
-    <option name="LAST_COMMIT_MESSAGE" value="datatable added" />
+    <MESSAGE value="changed employee" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed employee" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Deployment" timestamp="1595492813232">
@@ -318,10 +326,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592985456239" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1596993494639">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1597048598978">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596993494639" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597048598978" />
     <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1597029871486">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -330,14 +338,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595500702483" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1596733072718">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1597048610574">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596733072718" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597048610574" />
     <state x="77" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1597029785602">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="77" y="255" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597029785602" />
+    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597048645168">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1597048645168" />
     <state x="568" y="95" key="ftp.server.browser" timestamp="1595473387028">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -352,7 +364,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/backend/partial/sidebar.blade.php</url>
-          <line>59</line>
+          <line>61</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
